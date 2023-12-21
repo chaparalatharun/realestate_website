@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Real Estate</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Your Real Estate</h1>
+        <p>Find Your Dream Home with Us</p>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <h1>Discover Your Perfect Home</h1>
+        <p>Explore a wide range of properties and find the one that suits your lifestyle.</p>
+        <div id="button-group">
+            <a href="./signup.html" class="action-button" id="signup-button">Sign Up Now</a>
+            <a href="#login" onclick="openModal()" class="action-button" id="login-button">Login</a>
+        </div>
+    </section>
+
+    <!-- Property Listings Section -->
+    <section id="property-listings">
+        <h2>Featured Properties</h2>
+        <p>Explore our featured listings and find the perfect property for you.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions or ready to find your dream home? Contact us today.</p>
+        <form>
+            <!-- Contact form remains unchanged -->
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2023 Your Real Estate. All rights reserved.</p>
+    </footer>
+
+    <div id="signup-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <form id="signup-form" class="modal-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+    
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit" onclick="signIn()">Sign In</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
